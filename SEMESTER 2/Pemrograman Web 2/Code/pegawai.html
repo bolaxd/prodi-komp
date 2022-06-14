@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaji Pegawai</title>
+</head>
+
+<body>
+    <center>
+        <h1>PROGRAM GAJI PEGAWAI</h1>
+        <hr>
+        <form action="proses.php" method="post">
+            <table>
+                <tr>
+                    <td>Nama Pegawai</td>
+                    <td><input type="text" name="pegawai"></td>
+                </tr>
+                <tr>
+                    <td>Golongan</td>
+                    <td>
+                        <!-- <input type="text" name="golongan"> -->
+                        <select name="golongan">
+                            <option value="I">I</option>
+                            <option value="II">II</option>
+                            <option value="III">III</option>
+                            <option value="IV">IV</option>
+                            <option value="V">V</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <input type="submit" value="Kirim">
+            <input type="reset" value="Reset">
+        </form>
+</body>
+
+</html>
