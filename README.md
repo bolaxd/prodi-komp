@@ -1,8 +1,8 @@
 # MY UNIKOM DATA 
 
 <p align="center">
-<img src="./Images/logo_unikom_kuning.png"/>
-</p>
+<img src="./Images/logo_unikom_kuning.png" style="max-width: 40%;"/>
+</p></p></p>
 <p align="center">
 </p>
 <p align="center">
