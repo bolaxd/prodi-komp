@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 7 - Hanif A S - 10121161</title>
+</head>
+
+<body>
+    <center>
+        Program Penjualan Barang
+        <hr>
+        <form name="form">
+            <table>
+                <tr>
+                    <td>NAMA BARANG</td>
+                    <td>JUMLAH BELI</td>
+                </tr>
+                <tr>
+                    <td colspan=2>
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="handphone"> Handphone</td>
+                    <td><input type="number" name="total_handphone"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="laptop"> Laptop</td>
+                    <td><input type="number" name="total_laptop"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="komputer"> Komputer</td>
+                    <td><input type="number" name="total_komputer"></td>
+                </tr>
+                <tr>
+                    <td colspan=2>
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Total Harga</td>
+                    <td><input type=text name=total disabled></td>
+                </tr>
+                <tr>
+                    <td colspan=2>
+                        <hr>
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <input type=button value=Proses onclick="proses()">
+            <input type=reset value=Reset>
+        </form>
+    </center>
+</body>
+<script>
+    function proses() {
+        var harga = 0;
+        if (document.form.handphone.checked) {
+            var total_handphone = document.form.total_handphone.value
+            harga += (1200000 * total_handphone)
+        }
+        if (document.form.laptop.checked) {
+            var total_laptop = document.form.total_laptop.value
+            harga += (5000000 * total_laptop);
+        }
+        if (document.form.komputer.checked) {
+            var total_komputer = document.form.total_komputer.value
+            harga += (3000000 * total_komputer);
+        }
+
+        document.form.total.value = harga;
+    }
+</script>
+
+</html>

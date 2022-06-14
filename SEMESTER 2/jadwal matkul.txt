@@ -1,0 +1,16 @@
+Senin  
+- Algoritma Dan Struktur Data 2 (7:50 - 9:30)
+- Organisasi Sistem Komputer (13:40 - 16:10)
+
+Selasa 
+- Pemrograman beroreintasi objek (9:30 - 12:00)
+- Prak. Algoritma struktur data 2 (12:50 - 14:30) 
+
+Rabu 
+- Pemrograman web 2 (8:40 - 10:20)
+
+Kamis 
+- Matematika sains data 2 (9:30 - 12:00)
+
+Jumat 
+- Statistika dan probabilitas (7:50 - 10:20)

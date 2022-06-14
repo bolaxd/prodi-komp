@@ -1,0 +1,32 @@
+<script>
+    document.write('<style>table, tr, td { text-align: center }</style>')
+
+    let nama_barang = 'HARGA BUKU'
+    document.write('<h2>TABEL ', nama_barang)
+
+    let harga_buku = 5000
+    let harga_penggaris = 2000
+
+    let total_harga_buku = 0
+    let total_harga_penggaris = 0
+    let total_harga = 0
+
+    document.write('<hr><table width=500 border=1><tr><td>JUMLAH</td><td>BUKU</td><td>PENGGARIS</td><td>TOTAL HARGA</td></tr>')
+    for (let i = 1; i <= 10; i++) {
+        total_harga_buku += i * harga_buku
+        total_harga_penggaris += i * harga_penggaris
+        total_harga += ((i * harga_buku) + (i * harga_penggaris))
+
+        document.write('<tr><td>' + i + '</td>')
+        document.write('<td>' + i * harga_buku + '</td>')
+        document.write('<td>' + i * harga_penggaris + '</td>')
+        document.write('<td>' + ((i * harga_buku) + (i * harga_penggaris))  + '</td></tr>')
+    }
+
+    document.write('<tr><td><hr></td><td><hr></td><td><hr></td><td><hr></td>')
+    document.write('<tr><td>TOTAL</td><td>' + total_harga_buku)
+    document.write('<td>' + total_harga_penggaris)
+    document.write('<td>' + total_harga)
+    document.write('</table><br>')
+
+</script>

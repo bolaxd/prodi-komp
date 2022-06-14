@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<head>
+    <title>TUGAS 5.1 - 10121161 - Hanif Ahmad Syauqi</title>
+</head>
+
+<body>
+    <center>
+        <font size="4">
+            Program Gaji Pegawai
+        </font>
+        <hr>
+        <form name="myform">
+            <table>
+                <tr>
+                    <td>Nama Pegawai</td>
+                    <td>: </td>
+                    <td><input type="text" name="nama" size="20"></td>
+                </tr>
+                <tr>
+                    <td>Jam Kerja Perhari</td>
+                    <td>: </td>
+                    <td><input type="number" name="jamKerja" size="5"></td>
+                </tr>
+                <tr>
+                    <td>Upah Perjam</td>
+                    <td>: </td>
+                    <td><input type="number" name="upahPerjam" size="5"></td>
+                </tr>
+                <tr>
+                    <td>Jumlah Anak</td>
+                    <td>: </td>
+                    <td><input type="number" name="jumlahAnak" size="5"></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><hr></td>
+                </tr>
+                <tr>
+                    <td>Gaji Per bulan</td>
+                    <td>: </td>
+                    <td><input disabled type="number" name="gajiPerbulan" size="5"></td>
+                </tr>
+                <tr>
+                    <td>Tunjangan Anak</td>
+                    <td>: </td>
+                    <td><input disabled type="number" name="tunjanganAnak" size="5"></td>
+                </tr>
+                <tr>
+                    <td>Gaji Total Perbulan</td>
+                    <td>: </td>
+                    <td><input disabled type="number" name="gajiTotalperbulan" size="5"></td>
+                </tr>
+                <tr>
+                    <td>PPH 10%</td>
+                    <td>: </td>
+                    <td><input disabled type="number" name="pph" size="5"></td>
+                </tr>
+                <tr>
+                    <td>Gaji Bersih Diterima</td>
+                    <td>: </td>
+                    <td><input disabled type="number" name="gajiBersihditerima" size="5"></td>
+                </tr>
+            </table>
+            <hr>
+            <input type="button" value="Hitung" onclick="hitungGaji()">
+            <input type="reset" value="Reset">
+        </form>
+</body>
+<script>
+    const hitungGaji = () => {
+        var data = {
+            nama: document.myform.nama.value,
+            jamKerja: document.myform.jamKerja.value,
+            upahPerjam: document.myform.upahPerjam.value,
+            jumlahAnak: document.myform.jumlahAnak.value,
+        }
+
+        let gajiHarian = data.jamKerja * data.upahPerjam
+        let gajiPerbulan = (gajiHarian * 5) * 4
+        document.myform.gajiPerbulan.value = gajiPerbulan
+
+        let tunjanganAnak = (gajiPerbulan * 0.10) * data.jumlahAnak
+        document.myform.tunjanganAnak.value = tunjanganAnak
+
+        let gajiTotalperbulan = gajiPerbulan + tunjanganAnak
+        document.myform.gajiTotalperbulan.value = gajiTotalperbulan
+        
+        let pph = gajiTotalperbulan * 0.10
+        document.myform.pph.value = pph
+
+        let gajiBersihditerima = gajiTotalperbulan - pph
+        document.myform.gajiBersihditerima.value = gajiBersihditerima
+
+        console.log(data);
+    }
+</script>
+</html>

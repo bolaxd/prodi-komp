@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>W3.CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/w3.css">
+</head>
+
+
+<body>
+    
+    <div class="w3-sidebar w3-bar-block w3-light-grey w3-card">
+        <h5 class="w3-bar-item">MENU</h5>
+        <button class="w3-bar-item w3-button tablink" onclick="openKota(event, 'Bandung')">Bandung</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openKota(event, 'Garut')">Garut</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openKota(event, 'Tasik')">Tasik</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openKota(event, 'Cirebon')">Cirebon</button>
+    </div>
+
+    <div style="margin-left: 230px;">
+        <div class="w3-container">
+            <h2>Membuat Menu Tab dan Link</h2>
+            <p>Click Pada Menu Disamping (vertical)</p>
+        </div>
+        <div id="Bandung" class="w3-container kota" style="display:none">
+            <h2>Bandung</h2>
+            <p>Dikenal dengan Julukan Kota Kembang, adalah Ibu Kota dari Provinsi Jawa Barat.</p>
+        </div>
+        <div id="Garut" class="w3-container kota" style="display:none">
+            <h2>Garut</h2>
+            <p>Dikenal dengan Julukan Kota Dodol, dan jaman juga dikenal dengan Jeruk Garut atau Domba
+                Garut</p>
+        </div>
+        <div id="Tasik" class="w3-container kota" style="display:none">
+            <h2>Tasik</h2>
+            <p>Atau Tasikmalaya Dikenal dengan Julukan Kota Intan, dan Kota Kerajinan Tangan</p>
+        </div>
+        <div id="Cirebon" class="w3-container kota" style="display:none">
+            <h2>Cirebon</h2>
+            <p>Dikenal dengan Julukan Kota udang</p>
+        </div>
+    </div>
+
+    <script>
+        function openKota(evt, namaKota) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("kota");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-green", "");
+            }
+            document.getElementById(namaKota).style.display = "block";
+            evt.currentTarget.className += " w3-green";
+        }
+    </script>
+</body>
+
+</html>

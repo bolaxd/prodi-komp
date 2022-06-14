@@ -1,0 +1,52 @@
+<!-- Luas p * L ;Kel 2 * p * l -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Form dengan W3 CSS</title>
+    <link rel="stylesheet" href="w3.css">
+    <script>
+        function calc() {
+            const lebar = document.myform.lebar.value
+            const panjang = document.myform.panjang.value
+            document.myform.luas.value = lebar * panjang
+            document.myform.keliling.value = 2 * panjang + 2 * lebar
+        }
+    </script>
+</head>
+
+<body>
+    <div class="w3-container">
+        <div class="w3-card w3-margin-top w3-animate-bottom">
+            <div class="w3-container w3-red w3-center">
+                <h2>Luas & Keliling Persegi Panjang</h2>
+            </div>
+            <form name="myform" class="w3-container w3-padding-24">
+                <p></p>
+                <label for="panjang">Panjang</label>
+                <input name="panjang" type="number" class="w3-input">
+                <p></p>
+                <label for="lebar">Lebar</label>
+                <input name="lebar" type="number" class="w3-input">
+                <p></p>
+                <label for="luas">Luas</label>
+                <input name="luas" type="text" class="w3-input" disabled>
+                <p></p>
+                <label for="keliling">keliling</label>
+                <input name="keliling" type="text" class="w3-input" disabled>
+                <p></p>
+                <div class="w3.container w3-center">
+                    <a href="#" class="w3-button w3-border w3-border-green w3-round-xlarge"
+                        onclick="calc();">Calculate</a>
+                    <button type="reset" href="#"
+                        class="w3-button w3-border w3-border-red w3-round-xlarge">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

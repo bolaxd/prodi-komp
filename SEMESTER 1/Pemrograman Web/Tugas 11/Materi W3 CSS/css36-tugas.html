@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Form dengan W3 CSS</title>
+    <link rel="stylesheet" href="w3.css">
+</head>
+
+<body>
+    <div class="w3-container">
+        <h1>FORMULIR DATA SISWA KELAS IT-1</h1>
+        <div class="w3-card">
+            <div class="w3-container w3-blue w3-center">
+                <h2>Input Form</h2>
+            </div>
+            <form name="form" action="" class="w3-container w3-padding-24">
+                <p></p>
+                <label for="nama">Nama Lengkap</label>
+                <input name="nama" type="text" class="w3-input">
+                <p></p>
+                <label for="nim">NIM</label>
+                <input name="nim" type="text" maxlength=8 class="w3-input">
+                <p></p>
+                <label for="jurusan">Jurusan</label>
+                <input name="jurusan" type="text" class="w3-input">
+                <p></p>
+                <label for="alamat">Alamat</label>
+                <input name="alamat" type="text" class="w3-input">
+                <p></p>
+                <label for="email">Email</label>
+                <input name="email" type="text" class="w3-input">
+                <p></p>
+
+                <div class="w3-container">
+                    <div class="w3-container w3-yellow">
+                        <h2>Pilih Jenis Kelamin</h2>
+                    </div>
+                    <div>
+                        <p></p>
+                        <label for="hobi">Jenis Kelamin</label>
+                        <p>
+                            <input class="w3-radio" type="radio" name="gender" value="male">
+                            <label>Pria</label>
+                        </p>
+                        <p>
+                            <input class="w3-radio" type="radio" name="gender" value="female">
+                            <label>Wanita</label>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="w3-container">
+                    <div class="w3-container w3-brown">
+                        <h2>Hobby</h2>
+                    </div>
+                    <div>
+                        <p>
+                            <input name="baca_buku" type="checkbox" class="w3-check">
+                            <label for="baca_buku">Baca Buku</label>
+                        </p>
+                        <p>
+                            <input name="coding" type="checkbox" class="w3-check">
+                            <label for="coding">Coding</label>
+                        </p>
+                        <p>
+                            <input name="nonton_tv" type="checkbox" class="w3-check">
+                            <label for="nonton_tv">Nonton TV</label>
+                        </p>
+                        <p>
+                            <input name="olahraga" type="checkbox" class="w3-check">
+                            <label for="olahraga">Olahraga</label>
+                        </p>
+                        <p>
+                            <input name="gaming" type="checkbox" class="w3-check">
+                            <label for="gaming">Gaming</label>
+                        </p>
+                        <p>
+                            <input name="jalan_jalan" type="checkbox" class="w3-check">
+                            <label for="jalan_jalan">Jalan-Jalan</label>
+                        </p>
+                        <p>
+                            <input name="ghibah" type="checkbox" class="w3-check">
+                            <label for="ghibah">Ghibah</label>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-container">
+                    <div class="w3-container w3-amber">
+                        <h2>Tempat Favorit</h2>
+                    </div>
+                    <div>
+                        <select class="w3-select" name="option">
+                            <option value="" disabled selected>Tempat Pavorit Kamu</option>
+                            <option value="1">Cafe</option>
+                            <option value="2">Taman</option>
+                            <option value="3">Gunung</option>
+                            <option value="4">Laut</option>
+                        </select>
+                        <p></p>
+                        <p></p>
+
+                    </div>
+                </div>
+
+                <div class="w3-container w3-left">
+                    <button type="reset" class="w3-button w3-border w3-border-red w3-round-large w3-hover-red">Reset
+                    </button>
+                </div>
+                <div class="w3-container w3-right">
+                    <button type="submit"
+                        class="w3-button w3-border w3-border-green w3-round-large w3-hover-green" onclick="send();">Kirim</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    function send() {
+        var data = {
+            nama: document.form.nama.value,
+            nim: document.form.nim.value,
+            jurusan: document.form.jurusan.value,
+            alamat: document.form.alamat.value,
+            email: document.form.nama.value,
+            // nama: document.form.nama.value,
+            // nama: document.form.nama.value,
+            // nama: document.form.nama.value,
+            // nama: document.form.nama.value,
+            // nama: document.form.nama.value,
+            // nama: document.form.nama.value,
+            // nama: document.form.nama.value,
+            
+        }
+        console.log(data)
+    }
+</script>
+</html>

@@ -1,0 +1,20 @@
+JADWAL MATKUL :
+
+Senin
+- Pemrograman WEB (7:00-8:40)
+- Algoritma & Struktur data (12:50-14:30)
+
+Selasa 
+- Prak. Algoritma & Struktur data 1 (7:50-09:30)
+- Bahasa Inggris (12:00 - 13:40)
+
+Rabu
+- Logika matematika (07:00 - 08:40)
+
+Kamis
+- Pengantar sistem & Teknologi Informasi (07:00 - 08:40)
+- Bahasa Indonesia (10:20 - 12:00)
+
+Jumat 
+- Matematika sains data 1 (08:40 - 11:10)
+- Pola pikir digital (14:30 - 16:10)

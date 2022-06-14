@@ -1,0 +1,43 @@
+<form name=form>
+    <script>
+        function proses() {
+            var harga = 0;
+            if (document.form.nasigoreng.checked) var harga = harga + 12000;
+            if (document.form.esjeruk.checked) var harga = harga + 8000;
+            if (document.form.soto.checked) var harga = harga + 8000;
+            if (document.form.tehmanis.checked) var harga = harga + 4000;
+            if (document.form.nasirames.checked) var harga = harga + 11000;
+            if (document.form.eskelapa.checked) var harga = harga + 10000;
+            document.form.harga.value = harga;
+        }
+    </script>
+    <h2>
+        <center>
+            Menggunakan Checkbox
+            <hr>
+            <table>
+                <tr>
+                    <td>MAKANAN
+                    <td>MINUMAN
+                <tr>
+                    <td colspan=2>
+                        <hr>
+                <tr>
+                    <td><input type=checkbox name=nasigoreng>Nasi Goreng
+                    <td><input type=checkbox name=esjeruk>Es Jeruk
+                <tr>
+                    <td><input type=checkbox name=soto>Soto
+                    <td><input type=checkbox name=tehmanis>Teh Manis
+                <tr>
+                    <td><input type=checkbox name=nasirames>Nasi Rames
+                    <td><input type=checkbox name=eskelapa>Es Kelapa
+                <tr>
+                    <td colspan=2>
+                        <hr>
+                <tr>
+                    <Td>Harga
+                    <td><input type=text name=harga size=6>
+            </table>
+            <hr>
+            <input type=button value=Proses onclick="proses()">
+            <input type=reset value=Reset>

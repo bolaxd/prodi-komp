@@ -1,0 +1,5 @@
+LMS         : lms.unikom.ac.id
+DASHBOARD   : mahasiswa.unikom.ac.id
+MY ACADEMIC : my.unikom.ac.id
+PRODI	    : if.unikom.ac.id
+E-Learning  : kuliahonline.unikom.ac.id

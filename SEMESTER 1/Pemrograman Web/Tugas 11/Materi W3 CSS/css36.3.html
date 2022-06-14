@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Form dengan W3 CSS</title>
+    <link rel="stylesheet" href="w3.css">
+</head>
+
+<body>
+    <div class="w3-card">
+        <div class="w3-container w3-amber w3-center">
+            <h2>Tempat Favorit</h2>
+        </div>
+        <form action="" class="w3-container w3-padding-24">
+            <div id="finish"></div>
+            <select class="w3-select" name="option">
+                <option value="" disabled selected>Tempat Pavorit Kamu</option>
+                <option value="1">Cafe</option>
+                <option value="2">Taman</option>
+                <option value="3">Gunung</option>
+                <option value="4">Laut</option>
+            </select>
+            <p></p>
+            <div class="w3.container w3-right">
+                <a href="#" onclick="finish();" class="w3-button w3-green w3-round-xlarge">Finish</a>
+            </div>
+            <div class="w3.container w3-left">
+                <a href="css36.2.html" class="w3-button w3-red w3-round-xlarge">Back</a>
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+    function finish(){
+        document.getElementById('finish').innerHTML = `
+        <div class="w3-panel w3-green">
+            <h3>Sukses!</h3>
+            <p>Data berhasil dikirim, silahkan menunggu untuk approval.</p>
+        </div>     
+        `
+    }
+</script>
+</html>

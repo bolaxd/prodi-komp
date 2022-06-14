@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 7 - Hanif A S - 10121161</title>
+</head>
+
+<body>
+    <center>
+        Program Penjualan Tiket
+        <hr>
+        <form name="form">
+            <table>
+                <tr>
+                    <td>Kota Tujuan</td>
+                    <td><input type="radio" name="tujuan">Jakarta</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="tujuan">Semarang</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="tujuan">Surabaya</td>
+                </tr>
+                <tr>
+                    <td>Jumlah Tiket</td>
+                    <td><input type="number" name="jumlah_tiket" size="6"></td>
+                </tr>
+                <tr>
+                    <td colspan=2>
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Harga Tiket</td>
+                    <td><input type=text name=harga disabled></td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td><input type=text name=total disabled></td>
+                </tr>
+                <tr>
+                    <td colspan=2>
+                        <hr>
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <input type=button value=Proses onclick="proses()">
+            <input type=reset value=Reset>
+        </form>
+    </center>
+</body>
+<script>
+    function proses() {
+        if (document.form.tujuan[0].checked) var harga = 100000;
+        if (document.form.tujuan[1].checked) var harga = 150000;
+        if (document.form.tujuan[2].checked) var harga = 200000;
+        document.form.harga.value = harga;
+
+        var jumlah_tiket = document.form.jumlah_tiket.value
+        var total = harga * jumlah_tiket
+        document.form.total.value = total
+    }
+</script>
+
+</html>

@@ -1,0 +1,44 @@
+<!-- <script>
+    var nama = 'helga'
+    var jenis_kelamin = 'pria'
+    var tinggi_badan = 170
+
+    hasil_berat_badan_ideal = 0
+
+    if (jenis_kelamin.toUpperCase() == 'PRIA') {
+        hasil_berat_badan_ideal = (tinggi_badan - 100) * 0.9
+    } else if (jenis_kelamin.toUpperCase() == 'WANITA') {
+        hasil_berat_badan_ideal = (tinggi_badan - 100) * 0.85
+    }
+
+    document.write('Nama Anda : ', nama.toUpperCase())
+    document.write('<br>Jenis Kelamin : ', jenis_kelamin.toUpperCase())
+    document.write('<br>Tinggi Badan : ', tinggi_badan, ' Cm')
+    document.write('<br>Berat Badan Ideal Anda : ', hasil_berat_badan_ideal, ' Kg')
+</script> -->
+
+<script>
+    var nama = 'Hanif'
+    var tinggi_badan = 170
+    var berat_badan = 68
+
+    var tinggi_badan_dalam_meter = tinggi_badan / 100
+    let berat_badan_ideal = berat_badan / (tinggi_badan_dalam_meter ** 2)
+
+    var indikasi_bmi = ''
+    if (berat_badan_ideal < 18) {
+        indikasi_bmi = 'berat badanmu dibawah rata-rata'
+    } else if (berat_badan_ideal > 18 && berat_badan_ideal < 25) {
+        indikasi_bmi = 'angka BMI kamu normal'
+    } else if (berat_badan_ideal > 25 && berat_badan_ideal < 40) {
+        indikasi_bmi = 'kamu memiliki berat badan berlebih'
+    } else if (berat_badan_ideal > 40) {
+        indikasi_bmi = 'angka ini menunjukkan tanda bahaya, sebaiknya dilakukan penanganan secepatnya'
+    }
+
+    document.write('Nama Anda : ', nama)
+    document.write('<br>Tinggi Badan : ', tinggi_badan, ' Cm')
+    document.write('<br>Berat Badan : ', berat_badan, ' Kg')
+    document.write('<br>BMI : ', berat_badan_ideal)
+    document.write('<br>Keterangan : ', indikasi_bmi)
+</script>

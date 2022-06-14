@@ -1,0 +1,6 @@
+@keyframes backgroundColorPalette { 0% { background: #ffd97d; } 25% { background: #60d394; } 50% { background: #aaf683; } 75% { background: #ee6055; } 100% { background: #ff9b85; } }
+@keyframes backgroundColorPalette2 { 0% { background: #ee6055; } 25% { background: #ffd97d; } 50% { background: #ff9b85; } 75% { background: #60d394; } 100% { background: #aaf683; } }
+@keyframes backgroundColorPalette3 { 0% { background: #60d394; } 25% { background: #ffd97d; } 50% { background: #ff9b85; } 75% { background: #ee6055; } 100% { background: #aaf683; } }
+.anim1 { animation-name: backgroundColorPalette; animation-duration: 10s; animation-iteration-count: infinite; animation-direction: alternate; }
+.anim2 { animation-name: backgroundColorPalette2; animation-duration: 10s; animation-iteration-count: infinite; animation-direction: alternate; }
+.anim3 { animation-name: backgroundColorPalette3; animation-duration: 10s; animation-iteration-count: infinite; animation-direction: alternate; }

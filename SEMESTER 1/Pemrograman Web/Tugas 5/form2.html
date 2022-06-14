@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan</title>
+</head>
+<body>
+    <form id="myform" action=""s>
+    <center>
+        <h1>Form input data KTP</h1>
+        <hr>
+            <table>
+                <tr>
+                    <td>NIK </td>
+                    <td>
+                        : <input type="text" name="nik" maxlength="16" id="nik" size="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nama </td>
+                    <td>
+                        : <input type="text" name="nama" id="nm" size="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tempat/Tgl Lahir </td>
+                    <td>
+                        : <input type="text" name="tempat" id="tmp" size="9">
+                        <input type="date" name="tanggal" id="tgl">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jenis kelamin</td>
+                    <td>
+                        : <input type="radio" name="jeniskelamin" id="jk" value="L">Pria
+                        <input type="radio" name="jeniskelamin" id="jk" value="P">Perempuan
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gol. Darah</td>
+                    <td>
+                        : 
+                            <select name="gologandarah" id="gd">
+                                <option value="-">-</option>
+                                <option value="O">O</option>
+                                <option value="A">A</option>
+                                <option value="AB">AB</option>
+                            </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td>
+                        : <input type="text" name="alamat" id="alm" size="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">RT/RW</td>
+                    <td>
+                        : <input type="text" name="RTRW" id="rtrw" size="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">Kel/Desa</td>
+                    <td>
+                        : <input type="text" name="desa" id="ds" size="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">Kecamatan</td>
+                    <td>
+                        : <input type="text" name="kecamanat" id="kec" size="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Agama</td>
+                    <td>
+                        : <select name="agama" id="ag">
+                            <option value="islam">Islam</option>
+                            <option value="kriste">Kristen  </option>
+                            <option value="hindu">Hindu</option>
+                            <option value="budha">Budha</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Status Perkawinan</td>
+                    <td>
+                        : <select name="statusperkawinan" id="sk">
+                            <option value="KAWIN">KAWIN</option>
+                            <option value="BELUM KAWIN">BELUM KAWIN</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pekerjaan</td>
+                    <td>
+                        : <input type="text" name="pekerjaan" id="pk" size="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kewarganegaraan</td>
+                    <td>
+                        : <select name="kewarganegaraan" id="kwg">
+                            <option value="WNI">WNI</option>
+                            <option value="WNA">WNA</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Berlaku hingga</td>
+                    <td>
+                        : <input type="text" name="berlakuhingga" id="bh" size="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Foto Resmi</td>
+                    <td>
+                        : <input type="file" name="fotoresmi" id="fr">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tanda dangan</td>
+                    <td>
+                        : <input type="file" name="tandatangan" id="ttd">
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <input type="submit" value="kirim">
+            <input type="reset" value="reset">
+        </center>
+    </form>
+    <script src="form1.js"></script>
+</body>
+</html>

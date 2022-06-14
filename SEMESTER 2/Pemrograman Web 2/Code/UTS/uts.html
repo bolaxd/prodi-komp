@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10121161 - Hanif Ahmad Syauqi - IF4</title>
+</head>
+
+<body>
+    <center>
+        <h1>PENJUALAN TIKET KERETA API</h1>
+        <hr>
+        <form name="form">
+            <table>
+                <tr>
+                    <td>KOTA TUJUAN</td>
+                    <td>
+                        <select name="kota_tujuan">
+                            <option value="bandung">BANDUNG</option>
+                            <option value="jakarta">JAKARTA</option>
+                            <option value="cirebon">CIREBON</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>KELAS</td>
+                    <td><input type="radio" name="kelas">EKONOMI</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="kelas">BISNIS</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="kelas">EKSEKUTIF</td>
+                </tr>
+                <tr>
+                    <td>JUMLAH TIKET</td>
+                    <td><input type="number" name="jumlah_tiket" size="6"></td>
+                </tr>
+                <tr>
+                    <td colspan=2>
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>HARGA TIKET</td>
+                    <td><input type=text name=harga disabled></td>
+                </tr>
+                <tr>
+                    <td>TOTAL</td>
+                    <td><input type=text name=total disabled></td>
+                </tr>
+                <tr>
+                    <td colspan=2>
+                        <hr>
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <input type=button value=Proses onclick="proses()">
+            <input type=reset value=Reset>
+        </form>
+    </center>
+</body>
+<script>
+    function proses() {
+        var kota_tujuan = document.form.kota_tujuan.value
+        var kelas = document.form.kelas[0].checked ? "ekonomi" : document.form.kelas[1].checked ? "bisnis" : document.form.kelas[2].checked ? "eksekutif" : ""
+        var jumlah_tiket = document.form.jumlah_tiket.value
+        var harga = 0
+
+        if (kota_tujuan == "bandung") {
+            if (kelas == "ekonomi") {
+                harga = 100000
+            } else if (kelas == "bisnis") {
+                harga = 125000
+            } else if (kelas == "eksekutif") {
+                harga = 150000
+            }
+        } else if (kota_tujuan == "jakarta") {
+            if (kelas == "ekonomi") {
+                harga = 150000
+            } else if (kelas == "bisnis") {
+                harga = 175000
+            } else if (kelas == "eksekutif") {
+                harga = 200000
+            }
+        } else if (kota_tujuan == "cirebon") {
+            if (kelas == "ekonomi") {
+                harga = 200000
+            } else if (kelas == "bisnis") {
+                harga = 250000
+            } else if (kelas == "eksekutif") {
+                harga = 300000
+            }
+        }
+
+        var total = harga * jumlah_tiket
+
+        document.form.harga.value = harga;
+        document.form.total.value = total
+    }
+</script>
+
+</html>

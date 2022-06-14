@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<head>
+    <title>TUGAS 6.1 - 10121161 - Hanif Ahmad Syauqi</title>
+</head>
+
+<body>
+    <center>
+        <font size="4">
+            Menghitung Gaji Pegawai
+        </font>
+        <hr>
+        <form name="myform">
+            <table>
+                <tr>
+                    <td>Nama Pegawai</td>
+                    <td>: </td>
+                    <td><input type="text" name="nama" size="20"></td>
+                </tr>
+                <tr>
+                    <td>Jabatan</td>
+                    <td>: </td>
+                    <td>
+                        <select name="jabatan">
+                            <option value="manager">MANAGER</option>
+                            <option value="hrd">HRD</option>
+                            <option value="marketing">MARKETING</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pendidikan</td>
+                    <td>: </td>
+                    <td>
+                        <select name="pendidikan">
+                            <option value="sma">SMA</option>
+                            <option value="s1">S1</option>
+                            <option value="s2">S2</option>
+                            <option value="s3">S3</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td>: </td>
+                    <td><textarea name=alamat></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><hr></td>
+                </tr>
+                <tr>
+                    <td>Gaji Pokok</td>
+                    <td>: </td>
+                    <td><input type="number" name="gajipokok" disabled></td>
+                </tr>
+                <tr>
+                    <td>Tunjangan</td>
+                    <td>: </td>
+                    <td><input type="number" name="tunjangan" disabled></td>
+                </tr>
+                <tr>
+                    <td>Total Gaji</td>
+                    <td>: </td>
+                    <td><input type="number" name="totalgaji" disabled></td>
+                </tr>
+            </table>
+            <hr>
+            <input type="button" value="Hitung" onclick="hitungGaji()">
+            <input type="reset" value="Reset">
+        </form>
+</body>
+<script>
+    const hitungGaji = () => {
+        var jabatan = document.myform.jabatan.value
+        var pendidikan = document.myform.pendidikan.value
+        var gajipokok = 0
+        var tunjangan = 0
+
+        if (jabatan == 'manager') {
+            gajipokok = 15000000
+        } else if (jabatan == 'hrd') {
+            gajipokok = 8000000
+        } else if (jabatan == 'marketing') {
+            gajipokok = 5000000
+        }
+
+        if (pendidikan == 'sma') {
+            tunjangan = gajipokok * 0.10
+        } else if (pendidikan == 's1') {
+            tunjangan = gajipokok * 0.15
+        } else if (pendidikan == 's2') {
+            tunjangan = gajipokok * 0.20
+        } else if (pendidikan == 's3') {
+            tunjangan = gajipokok * 0.30
+        } 
+
+        var totalgaji = gajipokok + tunjangan
+
+        document.myform.gajipokok.value = gajipokok
+        document.myform.tunjangan.value = tunjangan
+        document.myform.totalgaji.value = totalgaji
+
+    }
+</script>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/sweetalert2/6.6.2/sweetalert2.min.css">
+  <link href="https://product.fitrahxsenpai.my.id/css/gxc7+.css" rel="stylesheet">
+  <link href="https://product.fitrahxsenpai.my.id/css/gxc7++.css" rel="stylesheet">
+  <link href="https://product.fitrahxsenpai.my.id/css/all.css" rel="stylesheet">
+  <link href="https://product.fitrahxsenpai.my.id/css/all.min.css" rel="stylesheet">
+  <script data-ad-client="ca-pub-7943668154006028" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
+  <script type="application/ld+json"> {"@context":"http://www.schema.org","@type":"website","name":"FitrahXSenpai.my.id","alternateName":"FitrahXSenpai","url":"https://fitrahxsenpai.my.id/"} </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-17TPLJJRVC"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-17TPLJJRVC');
+  </script>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-MW52CP2'); </script>
+<title>List Produk Game by AXV Store</title>
+<style> .btn { position: relative; cursor: pointer; outline: none; } </style>
+</head>
+<body style="background-image: URL(https://i.giphy.com/media/FlodpfQUBSp20/giphy.webp);">
+
+
+    
+    
+      <main class="content">
+        <div class="container-fluid p-0">
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <div class="card">
+                <div class="card-content">
+                  <div class="px-3 py-3">
+                    <img src="https://h.top4top.io/p_2323xj4kg0.jpg" class="rounded float-left mr-3" style="object-fit: cover;" width="80px" height="80px">
+		            <div class="h4">MOBILE LEGENDS</div><hr>
+		            <div class="h5">DIAMOND MLBB<a href="/mlbb.html" class="btn btn-success float-right">
+		                <i class="align-middle" data-feather="shopping-cart"></i> Beli </a>
+		            </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 col-md-12">
+              <div class="card">
+                <div class="card-content">
+                  <div class="px-3 py-3">
+                    <img src="https://i.top4top.io/p_2323cyxl02.jpg" class="rounded float-left mr-3" style="object-fit: cover;" width="80px" height="80px">
+		            <div class="h4">PUBG MOBILE</div><hr>
+		            <div class="h5">UC PUBG<a href="/pubg.html" class="btn btn-success float-right">
+		                <i class="align-middle" data-feather="shopping-cart"></i> Beli </a>
+		            </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <div class="card">
+                <div class="card-content">
+                  <div class="px-3 py-3">
+                    <img src="https://h.top4top.io/p_2323gcsmg1.jpg" class="rounded float-left mr-3" style="object-fit: cover;" width="80px" height="80px">
+		            <div class="h4">HIGGS DOMINO</div><hr>
+		            <div class="h5">KOIN DOMINO<a href="/domino.html" class="btn btn-success float-right">
+		                <i class="align-middle" data-feather="shopping-cart"></i> Beli </a>
+		            </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-12 col-md-12">
+              <div class="card">
+                <div class="card-content">
+                  <div class="px-3 py-3">
+                    <img src="https://e.top4top.io/p_2323rtd3n0.jpg" class="rounded float-left mr-3" style="object-fit: cover;" width="80px" height="80px">
+		            <div class="h4">ARENA OF VALOR</div><hr>
+		            <div class="h5">AOV GAME<a href="/aov.html" class="btn btn-success float-right">
+		                <i class="align-middle" data-feather="shopping-cart"></i> Beli </a>
+		            
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-12 col-md-12">
+              <div class="card">
+                <div class="card-content">
+                  <div class="px-3 py-3">
+                    <img src="https://f.top4top.io/p_2323ka8be1.jpeg" class="rounded float-left mr-3" style="object-fit: cover;" width="80px" height="80px">
+		            <div class="h4">LIFE AFTER</div><hr>
+		            <div class="h5">CREDIT LIFE AFTER<a href="/lifeafter.html" class="btn btn-success float-right">
+		                <i class="align-middle" data-feather="shopping-cart"></i> Beli </a>
+		            
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12 col-md-12">
+              <div class="card">
+                <div class="card-content">
+                  <div class="px-3 py-3">
+                    <img src="https://g.top4top.io/p_23233rku92.jpg" class="rounded float-left mr-3" style="object-fit: cover;" width="80px" height="80px">
+		            <div class="h4">INDO PLAY</div><hr>
+		            <div class="h5">ID PLAY GOLD<a href="/indoplay.html" class="btn btn-success float-right">
+		                <i class="align-middle" data-feather="shopping-cart"></i> Beli </a>
+		            
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12 col-md-12">
+              <div class="card">
+                <div class="card-content">
+                  <div class="px-3 py-3">
+                    <img src="https://h.top4top.io/p_2323jlim03.png" class="rounded float-left mr-3" style="object-fit: cover;" width="80px" height="80px">
+		            <div class="h4">LORD MOBILE</div><hr>
+		            <div class="h5">DIAMOND LM<a href="/lordmobile.html" class="btn btn-success float-right">
+		                <i class="align-middle" data-feather="shopping-cart"></i> Beli </a>
+		
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 col-md-12">
+              <div class="card">
+                <div class="card-content">
+                  <div class="px-3 py-3">
+                    <img src="https://g.top4top.io/p_2323wpscb0.png" class="rounded float-left mr-3" style="object-fit: cover;" width="80px" height="80px">
+		            <div class="h4">FREE FIRE</div><hr>
+		            <div class="h5">DIAMOND FF<a href="/freefire.html" class="btn btn-success float-right">
+		                <i class="align-middle" data-feather="shopping-cart"></i> Beli </a>
+		            </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+              <div class="col-lg-12 col-md-12">
+              <div class="card">
+                <div class="card-content">
+                  <div class="px-3 py-3">
+                    <img src="https://e.top4top.io/p_2326elnel5.jpeg" class="rounded float-left mr-3" style="object-fit: cover;" width="80px" height="80px">
+		            <div class="h4">CALL OFF DUTY</div><hr>
+		            <div class="h5">COD MOBILE CP<a href="/cod.html" class="btn btn-success float-right">
+		                <i class="align-middle" data-feather="shopping-cart"></i> Beli </a>
+		            </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    <div class="col-lg-12 col-md-12">
+              <div class="card">
+                <div class="card-content">
+                  <div class="px-3 py-3">
+                    <img src="https://d.top4top.io/p_2326d9n9e4.jpeg" class="rounded float-left mr-3" style="object-fit: cover;" width="80px" height="80px">
+		            <div class="h4"><font size="3">POINT BLANK ZEPETTO</font></div><hr>
+		            <div class="h5">PB CASH<a href="/pointblank.html" class="btn btn-success float-right">
+		                <i class="align-middle" data-feather="shopping-cart"></i> Beli </a>
+		            </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+              <div class="col-lg-12 col-md-12">
+              <div class="card">
+                <div class="card-content">
+                  <div class="px-3 py-3">
+                    <img src="https://c.top4top.io/p_2326vly8f3.jpeg" class="rounded float-left mr-3" style="object-fit: cover;" width="80px" height="80px">
+		            <div class="h4">SPEED DRIFTER</div><hr>
+		            <div class="h5">SPEED DRIFTER<a href="/speed.html" class="btn btn-success float-right">
+		                <i class="align-middle" data-feather="shopping-cart"></i> Beli </a>
+		            </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+              <div class="col-lg-12 col-md-12">
+              <div class="card">
+                <div class="card-content">
+                  <div class="px-3 py-3">
+                    <img src="https://b.top4top.io/p_2326u1pgq2.jpeg" class="rounded float-left mr-3" style="object-fit: cover;" width="80px" height="80px">
+		            <div class="h4">MARVEL SUPERWAR</div><hr>
+		            <div class="h5">STAR CREDIT<a href="/marvelwar.html" class="btn btn-success float-right">
+		                <i class="align-middle" data-feather="shopping-cart"></i> Beli </a>
+		            </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+              <div class="col-lg-12 col-md-12">
+              <div class="card">
+                <div class="card-content">
+                  <div class="px-3 py-3">
+                    <img src="https://a.top4top.io/p_2326goo7w1.png" class="rounded float-left mr-3" style="object-fit: cover;" width="80px" height="80px">
+		            <div class="h4">CHAOS CRISIS</div><hr>
+		            <div class="h5">DM CHAOS CRISIS<a href="/crisis.html" class="btn btn-success float-right">
+		                <i class="align-middle" data-feather="shopping-cart"></i> Beli </a>
+		            </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+              <div class="col-lg-12 col-md-12">
+              <div class="card">
+                <div class="card-content">
+                  <div class="px-3 py-3">
+                    <img src="https://l.top4top.io/p_2326ff4mg0.jpeg" class="rounded float-left mr-3" style="object-fit: cover;" width="80px" height="80px">
+		            <div class="h4">SAUSAGE MAN</div><hr>
+		            <div class="h5">CANDY<a href="/sausage.html" class="btn btn-success float-right">
+		                <i class="align-middle" data-feather="shopping-cart"></i> Beli </a>
+		            </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+      </div>
+    
+<script src="https://product.fitrahxsenpai.my.id/js/app.js"></script>
+<script src="https://product.fitrahxsenpai.my.id/js/all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/sweetalert2/6.6.2/sweetalert2.min.js"></script>
+<script> function MainTance(){ swal({ title:"- Maintenance -", type:"error", background:"#ffffff", confirmButtonColor:"#242323" }) } </script>
+<script> var elem = document.documentElement; function openFullscreen() { if (elem.requestFullscreen) { elem.requestFullscreen(); } else if (elem.mozRequestFullScreen) { /* Firefox */ elem.mozRequestFullScreen(); } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */ elem.webkitRequestFullscreen(); } else if (elem.msRequestFullscreen) { /* IE/Edge */ elem.msRequestFullscreen(); } } function closeFullscreen() { if (document.exitFullscreen) { document.exitFullscreen(); } else if (document.mozCancelFullScreen) { document.mozCancelFullScreen(); } else if (document.webkitExitFullscreen) { document.webkitExitFullscreen(); } else if (document.msExitFullscreen) { document.msExitFullscreen(); } } </script>
+<script> var sc_project=12604679; var sc_invisible=1; var sc_security="639f0b40"; </script>
+</html>

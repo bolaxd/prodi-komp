@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan</title>
+</head>
+<body>
+    <form>
+    <center>
+        <h1>Form data mahasiswa</h1>
+        <hr>
+            <table>
+                <tr>
+                    <td>Nama anda</td>
+                    <td>
+                        : <input type="text" name="namasiswa" id="nm" size="20">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jenis kelamin</td>
+                    <td>
+                        : <input type="radio" name="jeniskelamin" id="jk" value="L">Pria
+                        <input type="radio" name="jeniskelamin" id="jk" value="P">Perempuan
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hoby</td>
+                    <td>
+                        : <input type="checkbox" name="musik" id="mk">Musik
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>: <input type="checkbox" name="jalan" id="jl">Jalan</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>: <input type="checkbox" name="baca" id="bc">Baca</td>
+                </tr>
+                <tr>
+                    <td>Agama</td>
+                    <td>
+                        : <select name="agama" id="ag">
+                            <option value="islam">Islam</option>
+                            <option value="kriste">Kristen  </option>
+                            <option value="hindu">Hindu</option>
+                            <option value="budha">Budha</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asal sekolah</td>
+                    <td>
+                        : <input type="text" name="asalsekolah" id="as" size="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Keterangan</td>
+                    <td>
+                        : <textarea name="keterangan" id="ket" cols="34" rows="5"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <input id="sub" type="button" value="kirim">
+            <input type="reset" value="reset">
+        </center>
+    </form>
+    <script src="form1.js"></script>
+</body>
+</html>

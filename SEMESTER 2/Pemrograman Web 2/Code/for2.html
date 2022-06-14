@@ -1,0 +1,28 @@
+<script>
+    var nama_barang = 'BUKU TULIS'
+    document.write('<h2>TABEL HARGA ' + nama_barang)
+</script>
+<hr><p></p>
+<table border width=200>
+    <thead>
+        <tr>
+            <td style="text-align: center; font-weight: bold;">JUMLAH</td>
+            <td style="text-align: center; font-weight: bold;">HARGA</td>
+        </tr>
+    </thead>
+    <tbody>
+        <script>
+            let harga_awal = 5000
+            for (let i = 1; i <= 10; i++) {
+                document.write(`
+                <tr>
+                    <td>${i}</td>
+                    <td>${harga_awal * i}</td>
+                </tr>
+                `)
+            }
+        </script>
+    </tbody>
+</table>
+<p></p>
+<hr>
