@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Tiket KAI</title>
+</head>
+<body>
+    <center>
+    <h1>PENJUALAN TIKET KERETA API</h1>
+    <hr>
+    <form action="penjualan-tiket-kai.php" method="post">
+        <table>
+            <tr>
+                <td>KOTA TUJUAN</td>
+                <td>
+                    <select name="tujuan">
+                        <option value="BANDUNG">BANDUNG</option>
+                        <option value="JAKARTA">JAKARTA</option>
+                        <option value="CIREBON">CIREBON</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>KELAS</td>
+                <td><input type="radio" name="kelas" value="EKONOMI">EKONOMI</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="radio" name="kelas" value="BISNIS">BISNIS</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="radio" name="kelas" value="EKSEKUTIF">EKSEKUTIF</td>
+            </tr>
+            <tr>
+                <td>JUMLAH TIKET</td>
+                <td><input type="number" name="jumlah_tiket" size=15></td>
+            </tr>
+        </table>
+        <hr>
+        <input type="submit" value="Kirim">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

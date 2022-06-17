@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Bandung Motor</title>
+</head>
+<body>
+    <center>
+    <h1>BANDUNG MOTOR DAN AKSESORIS</h1>
+    <hr>
+    <form action="bandung-motor.php" method="post">
+        <table>
+            <tr>
+                <td>MERK</td>
+                <td>
+                    <select name="merk">
+                        <option value="HONDA">HONDA</option>
+                        <option value="YAMAHA">YAMAHA</option>
+                        <option value="SUZUKI">SUZUKI</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>AKSESORIS</td>
+                <td><input type="checkbox" name="helm" value="helm">HELM</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" name="jaket" value="jaket">JAKET</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" name="sarung tangan" value="sarung_tangan">SARUNG TANGAN</td>
+            </tr>
+        </table>
+        <hr>
+        <input type="submit" value="Kirim">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
