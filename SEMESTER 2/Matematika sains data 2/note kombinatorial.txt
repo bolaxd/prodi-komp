@@ -1,0 +1,27 @@
+contoh perbedaan :
+
+perwakilan 1
+- billy
+- nadia
+		<--- kombinasi
+perwakilan 2
+- nadia
+- billy
+
+
+ketua - w. ketua
+billy    nadia	<---- permutasi
+nadia	 billy
+
+
+20!
+-----
+5!(20-5)
+
+2.432.902.008.176.640.000
+
+120(15) = 1.800
+
+
+4
+
