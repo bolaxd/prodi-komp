@@ -5,6 +5,11 @@
  */
 package latihan1.hanif.pbo.main;
 
+import javax.swing.JComboBox;
+import javax.swing.JRadioButton;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+
 /**
  *
  * @author user
@@ -14,10 +19,51 @@ public class MainView extends javax.swing.JFrame {
     /**
      * Creates new form MainView
      */
+    Mahasiswa mahasiswa;
+    
     public MainView() {
+        mahasiswa = new Mahasiswa();
         initComponents();
     }
+    
+    public JTextArea getAlamat() {
+        return alamat;
+    }
 
+    public JRadioButton getBtnKelas1() {
+        return btnKelas1;
+    }
+
+    public JRadioButton getBtnKelas2() {
+        return btnKelas2;
+    }
+
+    public JRadioButton getBtnKelas3() {
+        return btnKelas3;
+    }
+
+    public JRadioButton getBtnKelas4() {
+        return btnKelas4;
+    }
+
+    public JComboBox<String> getJurusan() {
+        return jurusan;
+    }
+
+    public JTextField getTxtNama() {
+        return txtNama;
+    }
+
+    public JTextField getTxtNim() {
+        return txtNim;
+    }
+
+    public JTextArea getTxtTampil() {
+        return txtTampil;
+    }
+
+    
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -27,6 +73,7 @@ public class MainView extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroupKelas = new javax.swing.ButtonGroup();
         jPanel2 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -37,25 +84,24 @@ public class MainView extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        jRadioButton4 = new javax.swing.JRadioButton();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        txtNama = new javax.swing.JTextField();
+        txtNim = new javax.swing.JTextField();
+        btnKelas4 = new javax.swing.JRadioButton();
+        btnKelas1 = new javax.swing.JRadioButton();
+        btnKelas2 = new javax.swing.JRadioButton();
+        btnKelas3 = new javax.swing.JRadioButton();
+        jurusan = new javax.swing.JComboBox<>();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        jButton1 = new javax.swing.JButton();
+        alamat = new javax.swing.JTextArea();
+        BtnTampil = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTextArea2 = new javax.swing.JTextArea();
+        txtTampil = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Form Mahasiswa");
-        setPreferredSize(new java.awt.Dimension(1200, 800));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel2.setBackground(new java.awt.Color(238, 238, 238));
@@ -69,7 +115,7 @@ public class MainView extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Dubai", 1, 36)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Demo Component Swing");
+        jLabel1.setText("FORM DATA MAHASISWA");
         jLabel1.setPreferredSize(new java.awt.Dimension(1200, 140));
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
@@ -99,72 +145,81 @@ public class MainView extends javax.swing.JFrame {
         jLabel6.setText("JURUSAN                 :");
         jPanel4.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, -1, 20));
 
-        jTextField2.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        txtNama.setBackground(new java.awt.Color(255, 255, 255));
+        txtNama.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                txtNamaActionPerformed(evt);
             }
         });
-        jPanel4.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 50, 330, 40));
+        jPanel4.add(txtNama, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 50, 330, 40));
 
-        jTextField3.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+        txtNim.setBackground(new java.awt.Color(255, 255, 255));
+        txtNim.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
+                txtNimActionPerformed(evt);
             }
         });
-        jPanel4.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 130, 330, 40));
+        jPanel4.add(txtNim, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 130, 330, 40));
 
-        jRadioButton1.setBackground(new java.awt.Color(238, 238, 238));
-        jRadioButton1.setText("IF - 7");
-        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnKelas4.setBackground(new java.awt.Color(238, 238, 238));
+        buttonGroupKelas.add(btnKelas4);
+        btnKelas4.setText("IF - 7");
+        btnKelas4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton1ActionPerformed(evt);
+                btnKelas4ActionPerformed(evt);
             }
         });
-        jPanel4.add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 230, -1, -1));
+        jPanel4.add(btnKelas4, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 230, -1, -1));
 
-        jRadioButton2.setBackground(new java.awt.Color(238, 238, 238));
-        jRadioButton2.setText("IF - 4");
-        jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnKelas1.setBackground(new java.awt.Color(238, 238, 238));
+        buttonGroupKelas.add(btnKelas1);
+        btnKelas1.setText("IF - 4");
+        btnKelas1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton2ActionPerformed(evt);
+                btnKelas1ActionPerformed(evt);
             }
         });
-        jPanel4.add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 230, -1, -1));
+        jPanel4.add(btnKelas1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 230, -1, -1));
 
-        jRadioButton3.setBackground(new java.awt.Color(238, 238, 238));
-        jRadioButton3.setText("IF - 5");
-        jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnKelas2.setBackground(new java.awt.Color(238, 238, 238));
+        buttonGroupKelas.add(btnKelas2);
+        btnKelas2.setText("IF - 5");
+        btnKelas2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton3ActionPerformed(evt);
+                btnKelas2ActionPerformed(evt);
             }
         });
-        jPanel4.add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 230, -1, -1));
+        jPanel4.add(btnKelas2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 230, -1, -1));
 
-        jRadioButton4.setBackground(new java.awt.Color(238, 238, 238));
-        jRadioButton4.setText("IF - 6");
-        jRadioButton4.addActionListener(new java.awt.event.ActionListener() {
+        btnKelas3.setBackground(new java.awt.Color(238, 238, 238));
+        buttonGroupKelas.add(btnKelas3);
+        btnKelas3.setText("IF - 6");
+        btnKelas3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton4ActionPerformed(evt);
+                btnKelas3ActionPerformed(evt);
             }
         });
-        jPanel4.add(jRadioButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 230, -1, -1));
+        jPanel4.add(btnKelas3, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 230, -1, -1));
 
-        jComboBox1.setBackground(new java.awt.Color(204, 204, 204));
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "TEKNIK INFORMATIKA" }));
-        jPanel4.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 320, 240, 30));
+        jurusan.setBackground(new java.awt.Color(204, 204, 204));
+        jurusan.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "TEKNIK INFORMATIKA", "SISTEM INFORMASI", "TEKNIK KOMPUTER" }));
+        jPanel4.add(jurusan, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 320, 240, 30));
 
-        jTextArea1.setBackground(new java.awt.Color(255, 255, 255));
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        alamat.setBackground(new java.awt.Color(255, 255, 255));
+        alamat.setColumns(20);
+        alamat.setRows(5);
+        jScrollPane1.setViewportView(alamat);
 
         jPanel4.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 400, 380, 100));
 
-        jButton1.setBackground(new java.awt.Color(204, 204, 204));
-        jButton1.setText("Tampil Data");
-        jPanel4.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 510, 140, 60));
+        BtnTampil.setBackground(new java.awt.Color(204, 204, 204));
+        BtnTampil.setText("Tampil Data");
+        BtnTampil.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BtnTampilMouseClicked(evt);
+            }
+        });
+        jPanel4.add(BtnTampil, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 510, 140, 60));
 
         jPanel2.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 580, 590));
 
@@ -182,10 +237,10 @@ public class MainView extends javax.swing.JFrame {
         jPanel8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel7.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 150, 580, 590));
 
-        jTextArea2.setBackground(new java.awt.Color(255, 255, 255));
-        jTextArea2.setColumns(20);
-        jTextArea2.setRows(5);
-        jScrollPane2.setViewportView(jTextArea2);
+        txtTampil.setBackground(new java.awt.Color(255, 255, 255));
+        txtTampil.setColumns(20);
+        txtTampil.setRows(5);
+        jScrollPane2.setViewportView(txtTampil);
 
         jPanel7.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 520, 530));
 
@@ -197,29 +252,34 @@ public class MainView extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void txtNamaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNamaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_txtNamaActionPerformed
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+    private void txtNimActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNimActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+    }//GEN-LAST:event_txtNimActionPerformed
 
-    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
+    private void btnKelas4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKelas4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton1ActionPerformed
+    }//GEN-LAST:event_btnKelas4ActionPerformed
 
-    private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
+    private void btnKelas1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKelas1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton2ActionPerformed
+    }//GEN-LAST:event_btnKelas1ActionPerformed
 
-    private void jRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton3ActionPerformed
+    private void btnKelas2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKelas2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton3ActionPerformed
+    }//GEN-LAST:event_btnKelas2ActionPerformed
 
-    private void jRadioButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton4ActionPerformed
+    private void btnKelas3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKelas3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton4ActionPerformed
+    }//GEN-LAST:event_btnKelas3ActionPerformed
+
+    private void BtnTampilMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BtnTampilMouseClicked
+        // TODO add your handling code here:
+        mahasiswa.tampilDataMahasiswa(this);
+    }//GEN-LAST:event_BtnTampilMouseClicked
 
     /**
      * @param args the command line arguments
@@ -257,8 +317,13 @@ public class MainView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JButton BtnTampil;
+    private javax.swing.JTextArea alamat;
+    private javax.swing.JRadioButton btnKelas1;
+    private javax.swing.JRadioButton btnKelas2;
+    private javax.swing.JRadioButton btnKelas3;
+    private javax.swing.JRadioButton btnKelas4;
+    private javax.swing.ButtonGroup buttonGroupKelas;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -272,15 +337,11 @@ public class MainView extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextArea jTextArea2;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
+    private javax.swing.JComboBox<String> jurusan;
+    private javax.swing.JTextField txtNama;
+    private javax.swing.JTextField txtNim;
+    private javax.swing.JTextArea txtTampil;
     // End of variables declaration//GEN-END:variables
 }
