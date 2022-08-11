@@ -1,0 +1,212 @@
+<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="./assets/css/all.min.css">
+<link href="./assets/css/bstreeview.css" rel="stylesheet">
+
+<div class="treeview w-20 border">
+    <center>
+        <h2 class="pt-3 pl-3">Menu</h2>
+    </center>
+    <hr>
+    <div id="tree"></div>
+</div>
+
+<script src="./assets/js/jquery-3.6.0.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<script src="./assets/js/all.min.js"></script>
+<script src="./assets/js/bstreeview.js">
+</script>
+<script>
+    $(function () {
+
+        var json = [
+            {
+                text: "Home",
+                icon: "fa fa-home",
+                href: "home.html",
+                target: "main"
+
+            },
+            {
+                text: "8 Juni 2022",
+                icon: "fa-solid fa-folder",
+                nodes: [
+                    {
+                        text: "Gaji Pegawai",
+                        icon: "fa-solid fa-people-roof",
+                        href: "./08-06/program-gaji-pegawai.html",
+                        target: "main"
+                    },
+                    {
+                        text: "Jual Motor",
+                        icon: "fa-solid fa-motorcycle",
+                        href: "./08-06/jualmotor.html",
+                        target: "main"
+                    }
+                ]
+            },
+            {
+                text: "15 Juni 2022",
+                icon: "fa-solid fa-folder",
+                nodes: [
+                    {
+                        text: "Kereta Api",
+                        icon: "fa-solid fa-train",
+                        href: "./15-06/penjualan-tiket-kai.html",
+                        target: "main"
+                    },
+                    {
+                        text: "Jual Motor 2",
+                        icon: "fa-solid fa-motorcycle",
+                        href: "./15-06/bandung-motor.html",
+                        target: "main"
+                    }
+                ]
+            }, {
+                text: "22 Juni 2022",
+                icon: "fa-solid fa-folder",
+                nodes: [
+                    {
+                        text: "Barang",
+                        icon: "fa-solid fa-box",
+                        nodes: [
+                            {
+                                text: "Tambah",
+                                icon: "fa-solid fa-plus",
+                                href: "./22-06/tambah.html",
+                                target: "main"
+                            },
+                            {
+                                text: "Tampil",
+                                icon: "fa-solid fa-eye",
+                                href: "./22-06/tampil.php",
+                                target: "main"
+                            }
+                        ]
+                    }
+                ]
+            }, {
+                text: "29 Juni 2022",
+                icon: "fa-solid fa-folder",
+                nodes: [
+                    {
+                        text: "Barang",
+                        icon: "fa-solid fa-box",
+                        nodes: [
+                            {
+                                text: "Tambah",
+                                icon: "fa-solid fa-plus",
+                                href: "./29-06/tambah.html",
+                                target: "main"
+                            },{
+                                text: "Edit",
+                                icon: "fa-solid fa-pencil",
+                                href: "./29-06/editbarang.html",
+                                target: "main"
+                            },{
+                                text: "Hapus",
+                                icon: "fa-solid fa-ban",
+                                href: "./29-06/hapusbarang.html",
+                                target: "main"
+                            },
+                            {
+                                text: "Tampil",
+                                icon: "fa-solid fa-eye",
+                                href: "./29-06/tampil.php",
+                                target: "main"
+                            }
+                        ]
+                    }
+                ]
+            }, {
+                text: "6 Juli 2022",
+                icon: "fa-solid fa-folder",
+                nodes: [
+                    {
+                        text: "Relasi - Perwalian",
+                        icon: "fa-solid fa-school",
+                        nodes: [
+                            {
+                                text: "Tambah",
+                                icon: "fa-solid fa-plus",
+                                href: "./06-07/input_perwalian.php",
+                                target: "main"
+                            },
+                            {
+                                text: "Tampil",
+                                icon: "fa-solid fa-eye",
+                                href: "./06-07/tampil.php",
+                                target: "main"
+                            }
+                        ]
+                    }
+                ]
+            }, {
+                text: "13 Juli 2022",
+                icon: "fa-solid fa-folder",
+                nodes: [
+                    {
+                        text: "Aplikasi Perpus",
+                        icon: "fa-solid fa-box",
+                        nodes: [
+                            {
+                                text: "Tambah",
+                                icon: "fa-solid fa-plus",
+                                href: "./13-07/tambahbuku.html",
+                                target: "main"
+                            },{
+                                text: "Edit",
+                                icon: "fa-solid fa-pencil",
+                                href: "./13-07/editpeminjaman.html",
+                                target: "main"
+                            },{
+                                text: "Hapus",
+                                icon: "fa-solid fa-ban",
+                                href: "./13-07/hapuspeminjaman.html",
+                                target: "main"
+                            },
+                            {
+                                text: "Tampil",
+                                icon: "fa-solid fa-eye",
+                                href: "./13-07/tampil_peminjaman.php",
+                                target: "main"
+                            }
+                        ]
+                    }
+                ]
+            }, {
+                text: "20 Juli 2022",
+                icon: "fa-solid fa-folder",
+            },
+            {
+                text: "Visit My Github",
+                icon: "fa-brands fa-github fa-beat",
+                href: "https://github.com/MRHRTZ",
+                target: "blank",
+                class: "text-primary"
+            },
+            {
+                text: "My Instagram",
+                icon: "fa-brands fa-instagram fa-beat",
+                href: "https://instagram.com/hanif_az.sq.61",
+                target: "blank",
+                class: "text-warning"
+            },
+            {
+                text: "Contact My WhatsApp",
+                icon: "fa-brands fa-whatsapp fa-beat",
+                href: "https://wa.me/6285559038021",
+                target: "blank",
+                class: "text-success"
+            }
+        ];
+
+        $('#tree').bstreeview({
+            data: json,
+            expandIcon: 'fa fa-angle-down fa-fw fa-bounce',
+            collapseIcon: 'fa fa-angle-right fa-fw',
+            indent: 1.25,
+            parentsMarginLeft: '1.25rem',
+            openNodeLinkOnNewTab: true
+        });
+    });
+</script>

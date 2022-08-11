@@ -1,0 +1,12 @@
+{
+    "type": "service_account",
+    "project_id": "gararetech",
+    "private_key_id": "653a33806b7a9757f163f6a8efa627ec7a6e0e45",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCSEr+ZWt6kVtNN\nLKs5t7G7enlEjh6bE5okb+E9RKqyCW/vYqeu1Fdi2UKKIV1VZcwvI3OJV43n6aiY\nrZHvIesLZTnmnH6EqUjNU5nKATNND5lHoHMAR99TFo0Z79n9Vx7vXZ4L9/dBXANk\nIc3+gxrMCdGmlFOIOD98J7P0nooMYKkKQ+TIJQw/I+Bfy5P54wmQFWhVtGnLVvf6\n43+cyPTqooXIe2Yx9JVVP7QWucZVWPiLc58mFByeDAX1IXjNp5Bh0hR3dr9J4fo3\nLpDSSr717GUR1D5rFsEO5BxOdDgteQQrJHrK4BzFRsf4lhPf9s+CPKwnrZ2LLbZa\n1ifSRRw3AgMBAAECggEASQP0H/zrI2x/LKlyYWRwBA2hRmJf7BZtS19dUFndlSbg\ne+FtfheIItIEz7UDyWccHEf1Paa1OUJz0vWX59elfMm5mouJNljEGlZ6nh3hfdiZ\nPtN2CKLkf8za9ScOaPM+dFnwYX0ua85Jp6i6Jkl0gJ87269y3bl4CmByNIl26d45\nj3c7G96jzGSlURFbGsr/g9SHEbLl+RPwWfRQJXMFf0zz6uiupJCsfG/jbePMpZAv\nXaTcElHo9Ghma1LBalcP9G6nozJepWbNzwSBXQcGBiVQ20Yz7hpSl5SjGsRRa9go\nsjbhKQZphgMmL9vzuWTIHjaqQdBZ+i6qsWhNGDe4IQKBgQDNtEbsOWNejoUrwGd7\nKUJ8pgUW0Ck3ioL68TI8g25qRgVPEVRBFw2Euyb0LoK8l0X5sjO+0PT3+KfezZiv\ngaSz2NkEjzzAJxUw07BMQvzTc7g70tcwsylY75Fx1vX9OKotIqd8f1yg/6hs/qgh\nY1e/MQobsuIquzfiKJRp1dGu0QKBgQC1yfeLBtqgG5lW015oEebvP1I6W3ZNcMmJ\nccdAcaRp8au7TMB2yCac976V1bNHZ69B+k/ABH2Cu179IyIgmfVi/3AsJII4h0rz\n1tW/8uomZAFbq1qN4lPh8BTiwKSHRdlgsWu4VMj9j+U7j7QzQnv202onbHOlDmzu\n0fr8AcYshwKBgHZSSS1dwUPFlOJatOtKC11pnanGqL6y5K51iKD4NM3aYvldDWq3\nWOZNRJXWHwtdtDlxgIQ064OrOtxUxIvHdbaheAtAXQBmOrEwQstLCOSUPpfiqjbw\nB0uJ2c5yiGJUcsatlUtucxiElhvDy3ARFYr7KUZPefp8YCOtldjezdLRAoGAKkU/\nSVWbqpUgT78weZSIFWOs9CLmXFV4l3wcb9C9AWGPpCrRqg0aZW96Io8hc94ZM4dH\n2gdxQ9/b05LC0b/a/l0VMT6ABTL4a8CtzUdnyOuCIVWz5cAV7ziLMrrGxymnxUMc\nIC2e2s8F55afuTehaaB5U5d1QJEdJV8wND8ZXKsCgYEAhsBQNGqFi+nsAPmkMdd8\npTojmCnpZNXU1rxVVK+/0/waEmnSm474w0L5PegXNxZRzyB6raGdb3Yd1SFQzyUv\nWqE2zxfepph/1qzST/lOQeO3+15RvkOAOl9Y1SPaW+FEzzqQUwYHsgqNjjetzdmA\nsGt9UI/V0dXwyyG+hZEZx2o=\n-----END PRIVATE KEY-----\n",
+    "client_email": "gararetechadmin@gararetech.iam.gserviceaccount.com",
+    "client_id": "103656172658593367106",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gararetechadmin%40gararetech.iam.gserviceaccount.com"
+}

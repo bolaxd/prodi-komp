@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <script src="../assets/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <center>
+        <h1>PROGRAM GAJI PEGAWAI DINAS KEPENDUDUKAN</h1>
+        <hr>
+        <form action="program-gaji-pegawai.php" method="post">
+            <table>
+                <tr>
+                    <td>Nama Pegawai</td>
+                    <td><input type="text" name="pegawai"></td>
+                </tr>
+                <tr>
+                    <td>Golongan</td>
+                    <td>
+                        <select name="golongan">
+                            <option value="I">I</option>
+                            <option value="II">II</option>
+                            <option value="III">III</option>
+                            <option value="IV">IV</option>
+                            <option value="V">V</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>TUNJANGAN</td>
+                    <td><input type="checkbox" name="transport" value="transport">TRANSPORT</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="makan" value="makan">MAKAN</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="kesehatan" value="kesehatan">KESEHATAN</td>
+                </tr>
+            </table>
+            <hr>
+            <input class="btn btn-success" type="submit" value="Kirim">
+            <input class="btn btn-danger" type="reset" value="Reset">
+        </form>
+</body>
+
+</html>
